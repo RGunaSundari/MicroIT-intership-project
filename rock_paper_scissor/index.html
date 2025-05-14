@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex items-center justify-center min-h-screen" style="background-image: url('https://hips.hearstapps.com/hmg-prod/images/people-playing-paper-rock-scissors-royalty-free-illustration-1583269312.jpg?crop=0.994xw:0.799xh;0.00160xw,0.195xh&resize=2048:*');">
+    <div class="bg-white p-8 rounded-lg shadow-lg text-center max-w-md w-full" >
+        <h1 class="text-3xl font-bold mb-6 text-gray-800">Rock-Paper-Scissors</h1>
+        <div class="mb-6">
+            <p class="text-lg mb-2">Choose your move (Rounds left: <span id="rounds-left">10</span>)</p>
+            <button id="rock" class="btn-rock text-white px-4 py-2 rounded mx-2">Rock</button>
+            <button id="paper" class="btn-paper text-white px-4 py-2 rounded mx-2">Paper</button>
+            <button id="scissors" class="btn-scissors text-white px-4 py-2 rounded mx-2">Scissors</button>
+        </div>
+        <div id="result" class="text-lg mb-4">
+            <p><span class="font-semibold">Your choice:</span> <span id="player-choice">None</span></p>
+            <p><span class="font-semibold">Computer's choice:</span> <span id="computer-choice">None</span></p>
+            <p><span class="font-semibold">Result:</span> <span id="game-result">Let's play!</span></p>
+        </div>
+        <div class="text-lg mb-4">
+            <p><span class="font-semibold">Score:</span> You: <span id="player-score">0</span> | Computer: <span id="computer-score">0</span></p>
+        </div>
+        <div id="final-result" class="text-xl font-bold text-gray-800 hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

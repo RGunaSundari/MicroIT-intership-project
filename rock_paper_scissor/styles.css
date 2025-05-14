@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.btn-rock {
+   background-color: #ef4444;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-rock:hover {
+    background-color: #dc2626;
+    transform: scale(1.1);
+}
+
+.btn-paper {
+    background-color: #22c55e;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-paper:hover {
+    background-color: #16a34a;
+    transform: scale(1.1);
+}
+
+.btn-scissors {
+    background-color: #3b82f6;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-scissors:hover {
+    background-color: #2563eb;
+    transform: scale(1.1);
+}
+
+button:disabled {
+    background-color: #9ca3af !important;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
